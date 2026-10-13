@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bo11secsaf0yj"
+path="res://.godot/imported/mantis_ext.obj-ee9fdea1ff6c4cf2404b1907b6595f31.mesh"
+
+[deps]
+
+files=["res://.godot/imported/mantis_ext.obj-ee9fdea1ff6c4cf2404b1907b6595f31.mesh"]
+
+source_file="res://assets/ship/mantis_ext.obj"
+dest_files=["res://.godot/imported/mantis_ext.obj-ee9fdea1ff6c4cf2404b1907b6595f31.mesh", "res://.godot/imported/mantis_ext.obj-ee9fdea1ff6c4cf2404b1907b6595f31.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

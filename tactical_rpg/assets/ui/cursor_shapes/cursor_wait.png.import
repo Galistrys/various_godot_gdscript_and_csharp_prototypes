@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://dflh1qu5j4ert"
+path="res://.godot/imported/cursor_wait.png-18c58eec700f8ec070412f3ea9ad7191.image"
+
+[deps]
+
+source_file="res://assets/ui/cursor_shapes/cursor_wait.png"
+dest_files=["res://.godot/imported/cursor_wait.png-18c58eec700f8ec070412f3ea9ad7191.image"]
+
+[params]
+

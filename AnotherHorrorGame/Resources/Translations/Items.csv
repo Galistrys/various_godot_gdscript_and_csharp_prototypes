@@ -1,0 +1,7 @@
+;en;pl
+ITEM_TEST_COMPONENT_1;Test Component number 1;Testowy składnik numer 1
+ITEM_TEST_COMPONENT_1_DESC;This is a test component number 1.<<newline>>Combine it with test component number 2 to get test item.;To jest testowy składnik numer 1.<<newline>>Połącz go z testowym składnikiem numer 2 aby otrzymać testowy przedmiot.
+ITEM_TEST_COMPONENT_2;Test Component nr 2;Testowy składnik nr 2
+ITEM_TEST_COMPONENT_2_DESC;This is a test component number 2.<<newline>>Combine it with test component number 1 to get test item.;To jest testowy składnik numer 2.<<newline>>Połącz go z testowym składnikiem numer 1 aby otrzymać testowy przedmiot.
+ITEM_TEST_ITEM;Test Item;Testowy Przedmiot
+ITEM_TEST_ITEM_DESC;This is a test item.<<newline>>For tests;To jest testowy przedmiot.<<newline>>Do testów.

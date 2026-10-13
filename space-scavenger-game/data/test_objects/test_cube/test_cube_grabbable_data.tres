@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="GrabbableData" format=3 uid="uid://d3uwarpt8argv"]
+
+[ext_resource type="Resource" uid="uid://3hukben0gnvm" path="res://data/test_objects/test_cube/test_cube_interactable_data.tres" id="1_ekwkd"]
+[ext_resource type="Script" uid="uid://djmuobc0yyyqj" path="res://gameplay/entities/grabbable_object/grabbable_data.gd" id="1_s3olt"]
+[ext_resource type="Texture2D" uid="uid://r1yjwws21yaj" path="res://assets/prototype_textures/purple/texture_06.png" id="2_d6krh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d6krh"]
+albedo_texture = ExtResource("2_d6krh")
+uv1_scale = Vector3(3, 2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mmi8t"]
+material = SubResource("StandardMaterial3D_d6krh")
+size = Vector3(0.5, 0.5, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ekwkd"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[resource]
+script = ExtResource("1_s3olt")
+model = SubResource("BoxMesh_mmi8t")
+shape = SubResource("BoxShape3D_ekwkd")
+interactable_data = ExtResource("1_ekwkd")
+metadata/_custom_type_script = "uid://djmuobc0yyyqj"

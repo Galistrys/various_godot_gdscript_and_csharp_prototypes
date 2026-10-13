@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dnj5nra3wmo1w"
+path="res://.godot/imported/building_market.obj-190eeaf5d5183fc214a55b024a41e58d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/building_market.obj-190eeaf5d5183fc214a55b024a41e58d.mesh"]
+
+source_file="res://assets/hexes_alt/building_market.obj"
+dest_files=["res://.godot/imported/building_market.obj-190eeaf5d5183fc214a55b024a41e58d.mesh", "res://.godot/imported/building_market.obj-190eeaf5d5183fc214a55b024a41e58d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

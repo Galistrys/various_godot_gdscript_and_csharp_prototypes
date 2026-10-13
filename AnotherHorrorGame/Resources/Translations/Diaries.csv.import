@@ -1,0 +1,16 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+
+[deps]
+
+files=[ "res://Resources/Translations/Diaries.en.translation", "res://Resources/Translations/Diaries.pl.translation" ]
+
+source_file="res://Resources/Translations/Diaries.csv"
+dest_files=[ "res://Resources/Translations/Diaries.en.translation", "res://Resources/Translations/Diaries.pl.translation" ]
+
+[params]
+
+compress=true
+delimiter=1

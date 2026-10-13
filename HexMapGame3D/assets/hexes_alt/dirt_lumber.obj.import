@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dbuebnibbd3jm"
+path="res://.godot/imported/dirt_lumber.obj-6f8e3e46df60e88e57454d8559cdd5e7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/dirt_lumber.obj-6f8e3e46df60e88e57454d8559cdd5e7.mesh"]
+
+source_file="res://assets/hexes_alt/dirt_lumber.obj"
+dest_files=["res://.godot/imported/dirt_lumber.obj-6f8e3e46df60e88e57454d8559cdd5e7.mesh", "res://.godot/imported/dirt_lumber.obj-6f8e3e46df60e88e57454d8559cdd5e7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://1qtgwqlemjr2"]
+
+[ext_resource type="Script" uid="uid://d36d2qal4l2wh" path="res://ui/ui_views/main_menu/main_menu_view.gd" id="1_eku55"]
+[ext_resource type="Script" uid="uid://dp5mrmwofdc6f" path="res://ui/view_managers/view_stack_manager.gd" id="2_qf27m"]
+[ext_resource type="PackedScene" uid="uid://bx2xsnif3gw01" path="res://ui/ui_views/main_menu/mm_views/mm_main_view/mm_main_view.tscn" id="3_ro5sa"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qf27m"]
+font_size = 8
+
+[node name="MainMenuView" type="Control" unique_id=1122569997]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_eku55")
+
+[node name="ViewStackManager" type="Node" parent="." unique_id=1954227597 node_paths=PackedStringArray("_views_container")]
+script = ExtResource("2_qf27m")
+_id = "MainMenu"
+_start_view_name = "MmMainView"
+_views_container = NodePath("../MarginContainer/ViewsContainer")
+metadata/_custom_type_script = "uid://dp5mrmwofdc6f"
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2121049932]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="ViewsContainer" type="Control" parent="MarginContainer" unique_id=1981567588]
+layout_mode = 2
+
+[node name="MmMainView" parent="MarginContainer/ViewsContainer" unique_id=1597478763 instance=ExtResource("3_ro5sa")]
+layout_mode = 1
+
+[node name="VersionLabel" type="Label" parent="." unique_id=992536754]
+modulate = Color(1, 1, 1, 0.7529412)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.985
+anchor_top = 0.985
+anchor_right = 0.985
+anchor_bottom = 0.985
+offset_left = -22.0
+offset_top = -9.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Version"
+label_settings = SubResource("LabelSettings_qf27m")

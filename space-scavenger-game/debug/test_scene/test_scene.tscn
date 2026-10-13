@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://co3md4u6t1k8k"]
+
+[ext_resource type="Texture2D" uid="uid://c3624wo448qd3" path="res://assets/prototype_textures/dark/texture_09.png" id="1_7npfb"]
+[ext_resource type="Script" uid="uid://dmpe4mwwf2p6x" path="res://debug/test_scene/test_scene.gd" id="1_f4eb0"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_f4eb0"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_wywu0"]
+sky_material = SubResource("ProceduralSkyMaterial_f4eb0")
+
+[sub_resource type="Environment" id="Environment_r45y1"]
+background_mode = 2
+sky = SubResource("Sky_wywu0")
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bm4f2"]
+albedo_texture = ExtResource("1_7npfb")
+uv1_scale = Vector3(24, 16, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jhowa"]
+material = SubResource("StandardMaterial3D_bm4f2")
+size = Vector3(16, 2, 16)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7npfb"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_jhowa"]
+material = SubResource("StandardMaterial3D_7npfb")
+
+[node name="TestScene" type="Node3D" unique_id=1895762315]
+script = ExtResource("1_f4eb0")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2115582118]
+environment = SubResource("Environment_r45y1")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=518774890]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Floor" type="MeshInstance3D" parent="." unique_id=1639926324]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+mesh = SubResource("BoxMesh_jhowa")
+
+[node name="Ball" type="MeshInstance3D" parent="." unique_id=1441240260]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+mesh = SubResource("SphereMesh_jhowa")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1516127509]
+physics_interpolation_mode = 2
+transform = Transform3D(1, 0, 0, 0, 0.9144685, 0.404657, 0, -0.404657, 0.9144685, 0, 4, 11)

@@ -1,0 +1,37 @@
+[gd_resource type="Theme" format=3 uid="uid://hlcn3apjnn6i"]
+
+[ext_resource type="StyleBox" uid="uid://cpcwgdblok5h4" path="res://ui/theme/button/special_text_button/special_text_button_disabled.tres" id="1_1a5sv"]
+[ext_resource type="StyleBox" uid="uid://b1hapdis8voem" path="res://ui/theme/button/special_text_button/special_text_button_focus.tres" id="2_higs5"]
+[ext_resource type="StyleBox" uid="uid://lnwlso2jwj4n" path="res://ui/theme/button/special_text_button/special_text_button_hover.tres" id="3_ebgq4"]
+[ext_resource type="StyleBox" uid="uid://h0lxnaab0uh" path="res://ui/theme/button/special_text_button/special_text_button_normal.tres" id="4_vs2sa"]
+[ext_resource type="StyleBox" uid="uid://dl6nm4o6jsbyo" path="res://ui/theme/button/special_text_button/special_text_button_pressed.tres" id="5_0brsk"]
+[ext_resource type="StyleBox" uid="uid://chiibinljj6j6" path="res://ui/theme/button/standard_text_button/standard_text_button_disabled.tres" id="6_4rhsx"]
+[ext_resource type="StyleBox" uid="uid://cl2pe8ftw4ox0" path="res://ui/theme/button/standard_text_button/standard_text_button_focus.tres" id="7_es1pi"]
+[ext_resource type="StyleBox" uid="uid://o3c2607ehjgi" path="res://ui/theme/button/standard_text_button/standard_text_button_hover.tres" id="8_pohtv"]
+[ext_resource type="StyleBox" uid="uid://c6yvdt655ujck" path="res://ui/theme/button/standard_text_button/standard_text_button_normal.tres" id="9_albvw"]
+[ext_resource type="StyleBox" uid="uid://dvje1rkpv6rje" path="res://ui/theme/button/standard_text_button/standard_text_button_pressed.tres" id="10_kuuc8"]
+
+[resource]
+default_font_size = 12
+SpecialTextButton/base_type = &"Button"
+SpecialTextButton/colors/font_color = Color(0.93333334, 0.93333334, 0.93333334, 1)
+SpecialTextButton/colors/font_disabled_color = Color(0.6666667, 0.6666667, 0.6666667, 1)
+SpecialTextButton/colors/font_focus_color = Color(0.93333334, 0.93333334, 0.93333334, 1)
+SpecialTextButton/colors/font_hover_color = Color(1, 1, 1, 1)
+SpecialTextButton/colors/font_pressed_color = Color(0.93333334, 0.93333334, 0.93333334, 1)
+SpecialTextButton/styles/disabled = ExtResource("1_1a5sv")
+SpecialTextButton/styles/focus = ExtResource("2_higs5")
+SpecialTextButton/styles/hover = ExtResource("3_ebgq4")
+SpecialTextButton/styles/normal = ExtResource("4_vs2sa")
+SpecialTextButton/styles/pressed = ExtResource("5_0brsk")
+StandardTextButton/base_type = &"Button"
+StandardTextButton/colors/font_color = Color(0.93333334, 0.93333334, 0.93333334, 1)
+StandardTextButton/colors/font_disabled_color = Color(0.6666667, 0.6666667, 0.6666667, 1)
+StandardTextButton/colors/font_focus_color = Color(0.93333334, 0.93333334, 0.93333334, 1)
+StandardTextButton/colors/font_hover_color = Color(1, 1, 1, 1)
+StandardTextButton/colors/font_pressed_color = Color(0.93333334, 0.93333334, 0.93333334, 1)
+StandardTextButton/styles/disabled = ExtResource("6_4rhsx")
+StandardTextButton/styles/focus = ExtResource("7_es1pi")
+StandardTextButton/styles/hover = ExtResource("8_pohtv")
+StandardTextButton/styles/normal = ExtResource("9_albvw")
+StandardTextButton/styles/pressed = ExtResource("10_kuuc8")

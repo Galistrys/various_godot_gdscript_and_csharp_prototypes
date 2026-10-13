@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://bv7s5yhh81b0t"
+path="res://.godot/imported/cursor_ranged_attack.png-5a6b998613477c354c24ebc09b959704.image"
+
+[deps]
+
+source_file="res://assets/ui/cursor_shapes/cursor_ranged_attack.png"
+dest_files=["res://.godot/imported/cursor_ranged_attack.png-5a6b998613477c354c24ebc09b959704.image"]
+
+[params]
+

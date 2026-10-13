@@ -1,0 +1,45 @@
+{
+    "TEST_ITEM": {
+        "ItemName": "ITEM_TEST_ITEM",
+        "ItemType": "0",
+        "ItemContent": "ITEM_DESC_TEST_ITEM",
+        "CombineWith":
+        {
+            "TEST_INGR": "TEST_RESULT"
+        }
+    },
+    "TEST_INGR": {
+        "ItemName": "ITEM_TEST_INGR",
+        "ItemType": "0",
+        "ItemContent": "ITEM_DESC_TEST_INGR",
+        "CombineWith":
+        {
+            "TEST_ITEM": "TEST_RESULT"
+        }
+    },
+    "TEST_RESULT": {
+        "ItemName": "ITEM_TEST_RESULT",
+        "ItemType": "0",
+        "ItemContent": "ITEM_DESC_TEST_RESULT",
+        "OnCreatedEventId": "EVENT_TEST_RESULT_CREATED",
+        "CombineWith":
+        {
+            
+        }
+    },
+    "TEST_NOTE": {
+        "ItemName": "NOTE_TEST_NOTE",
+        "ItemType": "1",
+        "ItemContent": "NOTE_CONTENT_TEST_NOTE"
+    },
+    "22_05_2020_TEST_ENTRY": {
+        "ItemName": "DIARY_22_05_2020_TEST_ENTRY",
+        "ItemType": "2",
+        "ItemContent": "DIARY_22_05_2020_CONTENT_TEST_ENTRY"
+    },
+    "23_05_2020_TEST_ENTRY": {
+        "ItemName": "DIARY_23_05_2020_TEST_ENTRY",
+        "ItemType": "2",
+        "ItemContent": "DIARY_23_05_2020_CONTENT_TEST_ENTRY"
+    }
+}

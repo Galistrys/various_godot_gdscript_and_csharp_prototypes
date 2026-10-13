@@ -1,0 +1,21 @@
+{
+    "TestVideoDiary": {
+        "date": "543.23.15",
+        "type": "Video",
+        "author": "TEST_AUTHOR",
+        "title": "TEST_VIDEO_TITLE"
+    },
+    "TestTextDiary": {
+        "date": "543.23.13",
+        "type": "Text",
+        "author": "TEST_AUTHOR",
+        "title": "TEST_TEXT_TITLE",
+        "content": "TEST_TEXT_CONTENT"
+    },
+    "TestAudioDiary": {
+        "date": "543.23.14",
+        "type": "Audio",
+        "author": "TEST_AUTHOR",
+        "title": "TEST_AUDIO_TITLE"
+    }
+}

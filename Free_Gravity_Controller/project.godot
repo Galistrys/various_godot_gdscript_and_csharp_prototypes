@@ -1,0 +1,168 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+_global_script_classes=[{
+"base": "Object",
+"class": &"BehaviorPlayerState",
+"language": &"GDScript",
+"path": "res://entities/player/player_states/behavior_player_states/behavior_player_state.gd"
+}, {
+"base": "Area3D",
+"class": &"DockingPort",
+"language": &"GDScript",
+"path": "res://tools/docking_port/docking_port.gd"
+}, {
+"base": "MovementPlayerState",
+"class": &"FlyingPlayerState",
+"language": &"GDScript",
+"path": "res://entities/player/player_states/movement_player_states/flying_player_state.gd"
+}, {
+"base": "AnimatableBody3D",
+"class": &"GravityReferenceObject",
+"language": &"GDScript",
+"path": "res://entities/gravity_reference_object.gd"
+}, {
+"base": "Area3D",
+"class": &"GravityZone",
+"language": &"GDScript",
+"path": "res://tools/gravity_zone/gravity_zone.gd"
+}, {
+"base": "BehaviorPlayerState",
+"class": &"IdlePlayerState",
+"language": &"GDScript",
+"path": "res://entities/player/player_states/behavior_player_states/idle_player_state.gd"
+}, {
+"base": "Object",
+"class": &"MovementPlayerState",
+"language": &"GDScript",
+"path": "res://entities/player/player_states/movement_player_states/movement_player_state.gd"
+}, {
+"base": "CharacterBody3D",
+"class": &"PlayerController",
+"language": &"GDScript",
+"path": "res://entities/player/player.gd"
+}, {
+"base": "RefCounted",
+"class": &"PlayerState",
+"language": &"GDScript",
+"path": "res://entities/player/player_states/player_state.gd"
+}, {
+"base": "RefCounted",
+"class": &"PlayerStateMachine",
+"language": &"GDScript",
+"path": "res://entities/player/player_states/player_state_machine.gd"
+}, {
+"base": "MovementPlayerState",
+"class": &"WalkingPlayerState",
+"language": &"GDScript",
+"path": "res://entities/player/player_states/movement_player_states/walking_player_state.gd"
+}]
+_global_script_class_icons={
+"BehaviorPlayerState": "",
+"DockingPort": "",
+"FlyingPlayerState": "",
+"GravityReferenceObject": "",
+"GravityZone": "",
+"IdlePlayerState": "",
+"MovementPlayerState": "",
+"PlayerController": "",
+"PlayerState": "",
+"PlayerStateMachine": "",
+"WalkingPlayerState": ""
+}
+
+[application]
+
+config/name="SpaceAdventureGame"
+run/main_scene="res://scenes/game.scn"
+config/features=PackedStringArray("4.0", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Constants="*res://tools/autoloads/constants.gd"
+
+[input]
+
+move_forward={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":87,"unicode":0,"echo":false,"script":null)
+]
+}
+move_backward={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":83,"unicode":0,"echo":false,"script":null)
+]
+}
+move_left={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":65,"unicode":0,"echo":false,"script":null)
+]
+}
+move_right={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"unicode":0,"echo":false,"script":null)
+]
+}
+move_up={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":32,"unicode":0,"echo":false,"script":null)
+]
+}
+move_down={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194326,"unicode":0,"echo":false,"script":null)
+]
+}
+rotate_left={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":81,"unicode":0,"echo":false,"script":null)
+]
+}
+rotate_right={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":69,"unicode":0,"echo":false,"script":null)
+]
+}
+sprint={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194325,"unicode":0,"echo":false,"script":null)
+]
+}
+interact={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"pressed":false,"double_click":false,"script":null)
+]
+}
+exit_module_control={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"unicode":0,"echo":false,"script":null)
+]
+}
+
+[layer_names]
+
+3d_physics/layer_1="Terrain"
+3d_physics/layer_2="Player"
+3d_physics/layer_3="GravityZone"
+3d_physics/layer_4="Ship"
+3d_physics/layer_5="Module"
+3d_physics/layer_6="Stuff"
+3d_physics/layer_7="DockingPort"
+3d_physics/layer_8="InteractionScreen"
+
+[physics]
+
+3d/default_gravity=0.0
+3d/default_gravity_vector=Vector3(0, 0, 0)
+
+[rendering]
+
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=3

@@ -1,0 +1,68 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "KinematicBody2D",
+"class": "ShipController",
+"language": "GDScript",
+"path": "res://Ship/ShipController.gd"
+}, {
+"base": "Node2D",
+"class": "WorldManager",
+"language": "GDScript",
+"path": "res://World/WorldManager.gd"
+} ]
+_global_script_class_icons={
+"ShipController": "",
+"WorldManager": ""
+}
+
+[application]
+
+config/name="OhMyPirates"
+run/main_scene="res://Scenes/Game.scn"
+config/icon="res://icon.png"
+
+[autoload]
+
+MainManager="*res://Autoloads/MainManager.gd"
+WindManager="*res://Autoloads/WindManager.gd"
+
+[display]
+
+window/size/width=1920
+window/size/height=1080
+window/size/test_width=1280
+window/size/test_height=720
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[layer_names]
+
+2d_physics/layer_1="Ocean"
+2d_physics/layer_2="Shallow"
+2d_physics/layer_3="Ship"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+2d/snapping/use_gpu_pixel_snap=true
+environment/default_environment="res://default_env.tres"

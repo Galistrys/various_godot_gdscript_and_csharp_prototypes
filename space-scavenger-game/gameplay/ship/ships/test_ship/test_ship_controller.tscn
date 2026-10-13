@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://t3xa15c82nc1"]
+
+[ext_resource type="PackedScene" uid="uid://t5e7addt3pdj" path="res://gameplay/ship/ship_controller.tscn" id="1_o5a0s"]
+[ext_resource type="ArrayMesh" uid="uid://ba5cru6yfftg5" path="res://gameplay/ship/rasa.tres" id="2_fbwh6"]
+[ext_resource type="PackedScene" uid="uid://bi3ai26riaksq" path="res://gameplay/ship/ships/test_ship/test_ship_interior.tscn" id="2_ocmn7"]
+[ext_resource type="Shape3D" uid="uid://cmrc77u3ui5pp" path="res://gameplay/ship/ships/test_ship/test_ship_shape.tres" id="3_6r8wb"]
+
+[node name="TestShipController" unique_id=1310536497 instance=ExtResource("1_o5a0s")]
+
+[node name="InteriorWorldComponent" parent="." index="0" unique_id=1482195677]
+_interior_scene = ExtResource("2_ocmn7")
+
+[node name="Model" type="MeshInstance3D" parent="." index="1" unique_id=422903483]
+mesh = ExtResource("2_fbwh6")
+
+[node name="ColShape" type="CollisionShape3D" parent="." index="2" unique_id=288203180]
+shape = ExtResource("3_6r8wb")

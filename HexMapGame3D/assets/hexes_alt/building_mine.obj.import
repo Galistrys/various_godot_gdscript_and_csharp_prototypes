@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://clb7ewdw33hpu"
+path="res://.godot/imported/building_mine.obj-5cbcbbce061ab8594fadae48ffa92a91.mesh"
+
+[deps]
+
+files=["res://.godot/imported/building_mine.obj-5cbcbbce061ab8594fadae48ffa92a91.mesh"]
+
+source_file="res://assets/hexes_alt/building_mine.obj"
+dest_files=["res://.godot/imported/building_mine.obj-5cbcbbce061ab8594fadae48ffa92a91.mesh", "res://.godot/imported/building_mine.obj-5cbcbbce061ab8594fadae48ffa92a91.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

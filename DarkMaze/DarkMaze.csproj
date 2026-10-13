@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Tools</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7718E9C-7504-47DC-88F5-DBAB8C30DAF2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <OutputPath>.mono\temp\bin\$(Configuration)</OutputPath>
+    <RootNamespace>DarkMaze</RootNamespace>
+    <AssemblyName>DarkMaze</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <GodotProjectGeneratorVersion>1.0.7333.3918</GodotProjectGeneratorVersion>
+    <BaseIntermediateOutputPath>.mono\temp\obj</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)\$(Configuration)</IntermediateOutputPath>
+    <ApiConfiguration Condition=" '$(Configuration)' != 'Release' ">Debug</ApiConfiguration>
+    <ApiConfiguration Condition=" '$(Configuration)' == 'Release' ">Release</ApiConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>$(GodotDefineConstants);GODOT;DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>$(GodotDefineConstants);GODOT;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Tools|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>$(GodotDefineConstants);GODOT;DEBUG;TOOLS;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GodotSharp">
+      <Private>False</Private>
+      <HintPath>$(ProjectDir)/.mono/assemblies/$(ApiConfiguration)/GodotSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="GodotSharpEditor" Condition=" '$(Configuration)' == 'Tools' ">
+      <Private>False</Private>
+      <HintPath>$(ProjectDir)/.mono/assemblies/$(ApiConfiguration)/GodotSharpEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scripts\Data\EntityAction.cs" />
+    <Compile Include="Scripts\Data\Item.cs" />
+    <Compile Include="Scripts\Data\ItemData.cs" />
+    <Compile Include="Scripts\Data\ItemType.cs" />
+    <Compile Include="Scripts\Data\PhysicsLayer.cs" />
+    <Compile Include="Scripts\Data\Quests\MainQuest.cs" />
+    <Compile Include="Scripts\Data\Quests\SubQuest.cs" />
+    <Compile Include="Scripts\Data\TestResource.cs" />
+    <Compile Include="Scripts\Enemies\IEnemy.cs" />
+    <Compile Include="Scripts\GUI\InGame\GUI.cs" />
+    <Compile Include="Scripts\GUI\InGame\GUIManager.cs" />
+    <Compile Include="Scripts\GUI\InGame\GUIStates\BackgroundGUIState.cs" />
+    <Compile Include="Scripts\GUI\InGame\GUIStates\CrosshairGUIState.cs" />
+    <Compile Include="Scripts\GUI\InGame\GUIStates\DiaryGUIState.cs" />
+    <Compile Include="Scripts\GUI\InGame\GUIStates\ExitGUIState.cs" />
+    <Compile Include="Scripts\GUI\InGame\GUIStates\GUIState.cs" />
+    <Compile Include="Scripts\GUI\InGame\GUIStates\InventoryGUIState.cs" />
+    <Compile Include="Scripts\GUI\InGame\GUIStates\JournalGUIState.cs" />
+    <Compile Include="Scripts\GUI\InGame\GUIStates\NotesGUIState.cs" />
+    <Compile Include="Scripts\GUI\InGame\GUIStates\PauseGUIState.cs" />
+    <Compile Include="Scripts\GUI\InGame\GUIStates\ReaderGUIState.cs" />
+    <Compile Include="Scripts\GUI\InGame\GUIStates\ToDoGUIState.cs" />
+    <Compile Include="Scripts\GUI\InGame\HUD.cs" />
+    <Compile Include="Scripts\GUI\InGame\Inventory\Inventory.cs" />
+    <Compile Include="Scripts\GUI\InGame\Inventory\ItemContainer.cs" />
+    <Compile Include="Scripts\GUI\InGame\Journal\Diary.cs" />
+    <Compile Include="Scripts\GUI\InGame\Journal\Journal.cs" />
+    <Compile Include="Scripts\GUI\InGame\Journal\Notes.cs" />
+    <Compile Include="Scripts\GUI\InGame\Journal\Reader.cs" />
+    <Compile Include="Scripts\GUI\InGame\Journal\ToDo.cs" />
+    <Compile Include="Scripts\GUI\InGame\PauseMenu\PauseMenu.cs" />
+    <Compile Include="Scripts\GUI\MainMenu\LoadGameSection.cs" />
+    <Compile Include="Scripts\GUI\MainMenu\MainMenu.cs" />
+    <Compile Include="Scripts\GUI\MainMenu\MenuGUIStates\ExitMenuGUIState.cs" />
+    <Compile Include="Scripts\GUI\MainMenu\MenuGUIStates\LoadGameMenuGUIState.cs" />
+    <Compile Include="Scripts\GUI\MainMenu\MenuGUIStates\MainMenuGUIState.cs" />
+    <Compile Include="Scripts\GUI\MainMenu\MenuGUIStates\MenuGUIState.cs" />
+    <Compile Include="Scripts\GUI\MainMenu\MenuGUIStates\NewGameMenuGUIState.cs" />
+    <Compile Include="Scripts\GUI\MainMenu\NewGameSection.cs" />
+    <Compile Include="Scripts\Interactables\BasicEntity.cs" />
+    <Compile Include="Scripts\Interactables\Door.cs" />
+    <Compile Include="Scripts\Interactables\ExitDoor.cs" />
+    <Compile Include="Scripts\Interactables\GrabbableEntity.cs" />
+    <Compile Include="Scripts\Interactables\IInteractable.cs" />
+    <Compile Include="Scripts\Interactables\ItemEntity.cs" />
+    <Compile Include="Scripts\Interactables\MovableEntity.cs" />
+    <Compile Include="Scripts\Interactables\StateEntity.cs" />
+    <Compile Include="Scripts\Managers\Database.cs" />
+    <Compile Include="Scripts\Managers\GameManager.cs" />
+    <Compile Include="Scripts\Managers\GameSaveManager.cs" />
+    <Compile Include="Scripts\Managers\ISingleton.cs" />
+    <Compile Include="Scripts\Managers\Logger.cs" />
+    <Compile Include="Scripts\Managers\MainManager.cs" />
+    <Compile Include="Scripts\Managers\NetworkManager.cs" />
+    <Compile Include="Scripts\Managers\SettingsManager.cs" />
+    <Compile Include="Scripts\Managers\Singletons.cs" />
+    <Compile Include="Scripts\Maps\GameMap.cs" />
+    <Compile Include="Scripts\Maps\TestMap.cs" />
+    <Compile Include="Scripts\Maps\TestMap2.cs" />
+    <Compile Include="Scripts\Player\Player.cs" />
+    <Compile Include="Scripts\Tools\Utils.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

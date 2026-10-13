@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://dnvdyqpjhwey5"
+path="res://.godot/imported/cursor_busy.png-5b2d6971ecb7a329105311a5ecdeaba5.image"
+
+[deps]
+
+source_file="res://assets/ui/cursor_shapes/cursor_busy.png"
+dest_files=["res://.godot/imported/cursor_busy.png-5b2d6971ecb7a329105311a5ecdeaba5.image"]
+
+[params]
+

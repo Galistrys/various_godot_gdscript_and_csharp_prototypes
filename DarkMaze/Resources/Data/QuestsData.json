@@ -1,0 +1,38 @@
+{
+    "TEST_DOOR_OPEN":
+    {
+        "QuestName": "QUEST_TEST_DOOR_OPEN",
+        "SubQuests":
+        [
+            {
+                "SubQuestName": "SUBQUEST_TEST_DOOR_INITIAL",
+                "EventsNeeded":
+                [
+                    "EVENT_TEST_NOTE_PICKED_UP"
+                ]
+            },
+            {
+                "SubQuestName": "SUBQUEST_TEST_DOOR_OPEN_COLLECT_INGREDIENTS",
+                "EventsNeeded":
+                [
+                    "EVENT_TEST_ITEM_PICKED_UP",
+                    "EVENT_TEST_INGR_PICKED_UP"
+                ]
+            },
+            {
+                "SubQuestName": "SUBQUEST_TEST_DOOR_OPEN_CREATE_KEY",
+                "EventsNeeded":
+                [
+                    "EVENT_TEST_RESULT_CREATED"
+                ]
+            },
+            {
+                "SubQuestName": "SUBQUEST_TEST_DOOR_OPEN_OPEN_DOOR",
+                "EventsNeeded":
+                [
+                    "EVENT_TEST_DOOR_UNLOCKED"
+                ]
+            }
+        ]
+    }
+}

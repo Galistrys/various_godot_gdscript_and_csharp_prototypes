@@ -1,0 +1,31 @@
+;en;pl
+NEW_GAME;New game;Nowa gra
+LOAD_GAME;Load game;Wczytaj grę
+SETTINGS;Settings;Ustawienia
+ABOUT;About;O grze
+EXIT_GAME;Exit game;Wyjdź z gry
+RETURN;Return;Wróć
+ENTER_SAVE_NAME;Enter save name...;Wpisz nazwę zapisu...
+CREATE_GAME;Create game;Stwórz grę
+RESUME_GAME;Resume game;Wznów grę
+SAVE_GAME;Save game;Zapisz grę
+EXIT_GAME_CONFIRM_TITLE;Are you sure?;Czy na pewno?
+EXIT_GAME_CONFIRM_MESSAGE;Are you sure you want to exit game? All unsaved progress will be lost!;Czy na pewno chcesz wyjść z gry? Niezapisany postęp zostanie utracony!
+YES;Yes;Tak
+NO;No;Nie
+PICKED_UP_MESSAGE;<<item_name>> picked up;Podniesiono <<item_name>>
+FOUND_NOTE_MESSAGE;<<note_name>> found;Znaleziono <<note_name>>
+FOUND_DIARY_MESSAGE;<<diary_name>> found;Znaleziono <<diary_name>>
+DOOR_LOCKED;The door is locked;Drzwi są zamknięte
+LOADING;Loading...;Wczytywanie...
+LOADING_PROCEED_BUTTON;Continue;Kontynuuj
+INV_ITEMS;Items;Przedmioty
+INV_NOTES;Notes;Notatki
+INV_DIARIES;Journal;Dziennik
+INV_TODO;To Do;Zadania
+NOTES_LIST_LABEL;Notes;Notatki
+NOTE_OPEN_BUTTON;Open note;Otwórz notatkę
+NOTE_READER_RETURN_BUTTON;Return;Powrót
+DIARIES_LIST_LABEL;Journal;Dziennik
+DIARY_OPEN_BUTTON;Open entry;Otwórz wpis
+DIARY_RETURN_BUTTON;Return;Powrót

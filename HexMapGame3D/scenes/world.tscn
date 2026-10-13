@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://cv4vofoq2b20l"]
+
+[ext_resource type="PackedScene" uid="uid://dhgwclkn2m7yc" path="res://terrain/hex_terrain.tscn" id="2_3l55o"]
+[ext_resource type="PackedScene" uid="uid://bbgeek1g5i62g" path="res://tools/player_camera/player_camera.tscn" id="2_alxum"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_rg6j5"]
+sky_top_color = Color(0.384314, 0.454902, 0.54902, 1)
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_bottom_color = Color(0.341176, 0.501961, 0.709804, 1)
+ground_horizon_color = Color(0.647059, 0.654902, 0.670588, 1)
+
+[sub_resource type="Sky" id="Sky_ulmtq"]
+sky_material = SubResource("ProceduralSkyMaterial_rg6j5")
+
+[sub_resource type="Environment" id="Environment_81qcu"]
+background_mode = 2
+sky = SubResource("Sky_ulmtq")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="World" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_81qcu")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="PlayerCamera" parent="." instance=ExtResource("2_alxum")]
+
+[node name="HexTerrain" parent="." instance=ExtResource("2_3l55o")]
+map_size = 64
+enable_debug_draw = true

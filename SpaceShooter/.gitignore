@@ -1,0 +1,6 @@
+/.import/
+/.mono/
+/Build/
+!*/.gdignore
+*.translation
+*.csproj.old

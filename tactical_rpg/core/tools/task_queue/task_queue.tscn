@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://da0msiud8yg23"]
+
+[ext_resource type="Script" uid="uid://bhkhgr7hsxcfh" path="res://core/tools/task_queue/task_queue.gd" id="1_p15cr"]
+
+[node name="TaskQueue" type="Node" unique_id=290982673]
+script = ExtResource("1_p15cr")

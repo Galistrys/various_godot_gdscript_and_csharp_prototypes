@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://cnuxoeopnmtlq"
+path="res://.godot/imported/cursor_forbidden.png-9b9a891a7cb0e113c96ce8fd01441ac7.image"
+
+[deps]
+
+source_file="res://assets/ui/cursor_shapes/cursor_forbidden.png"
+dest_files=["res://.godot/imported/cursor_forbidden.png-9b9a891a7cb0e113c96ce8fd01441ac7.image"]
+
+[params]
+

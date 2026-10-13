@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://bkc7y776pxoy5"]
+
+[ext_resource type="Script" uid="uid://bamixrkxut7qb" path="res://gameplay/player/player.gd" id="1_01s76"]
+[ext_resource type="Script" uid="uid://5ihkd0lo21ai" path="res://gameplay/player/player_movement_state_machine.gd" id="2_xq3ts"]
+[ext_resource type="Script" uid="uid://bmakbdmib4c1" path="res://gameplay/player/player_behavior_state_machine.gd" id="3_wvk08"]
+[ext_resource type="Script" uid="uid://clu8cbyha6mof" path="res://gameplay/components/basic/value_component.gd" id="4_011tu"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jhowa"]
+radius = 0.4
+height = 1.8
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_m5riq"]
+radius = 0.4
+height = 1.2
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_xq3ts"]
+radius = 0.4
+
+[node name="Player" type="CharacterBody3D" unique_id=1877863250]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_01s76")
+
+[node name="HealthComponent" type="Node" parent="." unique_id=1827064270]
+script = ExtResource("4_011tu")
+max_value = 100.0
+metadata/_custom_type_script = "uid://clu8cbyha6mof"
+
+[node name="EnergyComponent" type="Node" parent="." unique_id=1616198815]
+script = ExtResource("4_011tu")
+max_value = 100.0
+metadata/_custom_type_script = "uid://clu8cbyha6mof"
+
+[node name="AirComponent" type="Node" parent="." unique_id=448439374]
+script = ExtResource("4_011tu")
+max_value = 100.0
+metadata/_custom_type_script = "uid://clu8cbyha6mof"
+
+[node name="PlayerMovementStateMachine" type="Node" parent="." unique_id=1563287602 node_paths=PackedStringArray("_player")]
+script = ExtResource("2_xq3ts")
+_player = NodePath("..")
+_id = &"PlayerMovementStateMachine"
+metadata/_custom_type_script = "uid://5ihkd0lo21ai"
+
+[node name="PlayerBehaviorStateMachine" type="Node" parent="." unique_id=782211755 node_paths=PackedStringArray("_player", "_interaction_ray_cast", "_movement_state_machine")]
+script = ExtResource("3_wvk08")
+_player = NodePath("..")
+_interaction_ray_cast = NodePath("../Head/Eyes/InteractionRayCast")
+_movement_state_machine = NodePath("../PlayerMovementStateMachine")
+_id = &"PlayerBehaviorStateMachine"
+metadata/_custom_type_script = "uid://bmakbdmib4c1"
+
+[node name="StandingCol" type="CollisionShape3D" parent="." unique_id=601025594]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5002921, 0)
+shape = SubResource("CapsuleShape3D_jhowa")
+debug_fill = false
+
+[node name="CrouchingCol" type="CollisionShape3D" parent="." unique_id=1898925156]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.8, 0)
+shape = SubResource("CapsuleShape3D_m5riq")
+disabled = true
+debug_fill = false
+
+[node name="FlyingCol" type="CollisionShape3D" parent="." unique_id=1638811476]
+shape = SubResource("SphereShape3D_xq3ts")
+disabled = true
+debug_fill = false
+
+[node name="Head" type="Node3D" parent="." unique_id=1956648709]
+
+[node name="Eyes" type="Node3D" parent="Head" unique_id=1571405029]
+
+[node name="PlayerCamera" type="Camera3D" parent="Head/Eyes" unique_id=411343436]
+physics_interpolation_mode = 2
+top_level = true
+current = true
+
+[node name="InteractionRayCast" type="RayCast3D" parent="Head/Eyes" unique_id=1019766785]
+visible = false
+target_position = Vector3(0, 0, -3)
+collision_mask = 4
+collide_with_areas = true
+
+[node name="StandRayCast" type="RayCast3D" parent="." unique_id=1035191784]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2, 0)
+visible = false
+target_position = Vector3(0, 0.6, 0)
+
+[node name="FloorRayCast" type="RayCast3D" parent="." unique_id=1807400759]
+visible = false
+target_position = Vector3(0, -1.4, 0)

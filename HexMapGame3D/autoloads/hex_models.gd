@@ -1,0 +1,38 @@
+extends Node
+
+
+const grass_tile_model = preload("res://assets/hexes_alt/grass.obj")
+const water_normal_tile_model = preload("res://assets/hexes_alt/water.obj")
+const water_rocks_tile_model = preload("res://assets/hexes_alt/water_rocks.obj")
+const water_island_tile_model = preload("res://assets/hexes_alt/water_island.obj")
+
+const road_start_model = preload("res://assets/hexes_alt/path_start_alt.obj")
+const road_end_model = preload("res://assets/hexes_alt/path_start.obj")
+const road_straight_model = preload("res://assets/hexes_alt/path_straight.obj")
+const road_corner_model = preload("res://assets/hexes_alt/path_corner.obj")
+const road_corner_sharp_model = preload("res://assets/hexes_alt/path_cornerSharp.obj")
+const road_intersection_a_model = preload("res://assets/hexes_alt/path_intersectionA.obj")
+const road_intersection_b_model = preload("res://assets/hexes_alt/path_intersectionB.obj")
+const road_intersection_c_model = preload("res://assets/hexes_alt/path_intersectionC.obj")
+const road_intersection_d_model = preload("res://assets/hexes_alt/path_intersectionD.obj")
+const road_intersection_e_model = preload("res://assets/hexes_alt/path_intersectionE.obj")
+const road_intersection_f_model = preload("res://assets/hexes_alt/path_intersectionF.obj")
+const road_intersection_g_model = preload("res://assets/hexes_alt/path_intersectionG.obj")
+const road_intersection_h_model = preload("res://assets/hexes_alt/path_intersectionH.obj")
+const road_crossing_model = preload("res://assets/hexes_alt/path_crossing.obj")
+
+
+const river_start_model = preload("res://assets/hexes_alt/river_start_alt.obj")
+const river_end_model = preload("res://assets/hexes_alt/river_start.obj")
+const river_straight_model = preload("res://assets/hexes_alt/river_straight.obj")
+const river_corner_model = preload("res://assets/hexes_alt/river_corner.obj")
+const river_corner_sharp_model = preload("res://assets/hexes_alt/river_cornerSharp.obj")
+const river_intersection_a_model = preload("res://assets/hexes_alt/river_intersectionA.obj")
+const river_intersection_b_model = preload("res://assets/hexes_alt/river_intersectionB.obj")
+const river_intersection_c_model = preload("res://assets/hexes_alt/river_intersectionC.obj")
+const river_intersection_d_model = preload("res://assets/hexes_alt/river_intersectionD.obj")
+const river_intersection_e_model = preload("res://assets/hexes_alt/river_intersectionE.obj")
+const river_intersection_f_model = preload("res://assets/hexes_alt/river_intersectionF.obj")
+const river_intersection_g_model = preload("res://assets/hexes_alt/river_intersectionG.obj")
+const river_intersection_h_model = preload("res://assets/hexes_alt/river_intersectionH.obj")
+const river_crossing_model = preload("res://assets/hexes_alt/river_crossing.obj")

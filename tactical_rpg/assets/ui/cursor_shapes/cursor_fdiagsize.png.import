@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://o780obogikxr"
+path="res://.godot/imported/cursor_fdiagsize.png-c637ab674e5a02ee0593f452d1b66ac1.image"
+
+[deps]
+
+source_file="res://assets/ui/cursor_shapes/cursor_fdiagsize.png"
+dest_files=["res://.godot/imported/cursor_fdiagsize.png-c637ab674e5a02ee0593f452d1b66ac1.image"]
+
+[params]
+

@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://bs4xoxqvx1bii"]
+
+[ext_resource type="Texture2D" uid="uid://dcuffdoo6l6vl" path="res://assets/prototype/Dark/texture_06.png" id="1_aefmc"]
+[ext_resource type="Texture2D" uid="uid://cyrn0l1ng3gkk" path="res://assets/prototype/Dark/texture_08.png" id="2_cm2q4"]
+[ext_resource type="Texture2D" uid="uid://bjok7roa4o21n" path="res://assets/prototype/Dark/texture_13.png" id="3_wykdo"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_wykdo"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bm4f2"]
+albedo_texture = ExtResource("1_aefmc")
+uv1_scale = Vector3(3, 2, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2xkeo"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="PrismMesh" id="PrismMesh_2xkeo"]
+left_to_right = 0.0
+size = Vector3(2, 2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pehjj"]
+albedo_texture = ExtResource("2_cm2q4")
+uv1_scale = Vector3(3, 2, 1)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_j3h7r"]
+points = PackedVector3Array(-1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jhowa"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2xkeo"]
+albedo_texture = ExtResource("3_wykdo")
+uv1_scale = Vector3(3, 2, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5ebk0"]
+size = Vector3(2, 2, 2)
+
+[node name="PrototypeMeshLibraryScene" type="Node3D" unique_id=1978635312]
+
+[node name="Floor" type="MeshInstance3D" parent="." unique_id=1746033120]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("BoxMesh_wykdo")
+surface_material_override/0 = SubResource("StandardMaterial3D_bm4f2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Floor" unique_id=38599726]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor/StaticBody3D" unique_id=1690200644]
+shape = SubResource("BoxShape3D_2xkeo")
+
+[node name="Ramp" type="MeshInstance3D" parent="." unique_id=717466274]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1, 0)
+mesh = SubResource("PrismMesh_2xkeo")
+surface_material_override/0 = SubResource("StandardMaterial3D_pehjj")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Ramp" unique_id=91018689]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ramp/StaticBody3D" unique_id=928597431]
+shape = SubResource("ConvexPolygonShape3D_j3h7r")
+
+[node name="Box" type="MeshInstance3D" parent="." unique_id=78663111]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 1, 0)
+mesh = SubResource("BoxMesh_jhowa")
+surface_material_override/0 = SubResource("StandardMaterial3D_2xkeo")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Box" unique_id=1375934690]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box/StaticBody3D" unique_id=1787203296]
+shape = SubResource("BoxShape3D_5ebk0")

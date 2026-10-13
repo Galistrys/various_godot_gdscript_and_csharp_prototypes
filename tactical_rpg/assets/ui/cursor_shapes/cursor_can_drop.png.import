@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://di2afbsl3dn04"
+path="res://.godot/imported/cursor_can_drop.png-021593f86d37edd5b7aaaa132f06764c.image"
+
+[deps]
+
+source_file="res://assets/ui/cursor_shapes/cursor_can_drop.png"
+dest_files=["res://.godot/imported/cursor_can_drop.png-021593f86d37edd5b7aaaa132f06764c.image"]
+
+[params]
+

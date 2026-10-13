@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://df6ytcxyrdr64"
+path="res://.godot/imported/water_island.obj-9f4c09e2fcf75d28e39da1cd4699005c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/water_island.obj-9f4c09e2fcf75d28e39da1cd4699005c.mesh"]
+
+source_file="res://assets/hexes_alt/water_island.obj"
+dest_files=["res://.godot/imported/water_island.obj-9f4c09e2fcf75d28e39da1cd4699005c.mesh", "res://.godot/imported/water_island.obj-9f4c09e2fcf75d28e39da1cd4699005c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

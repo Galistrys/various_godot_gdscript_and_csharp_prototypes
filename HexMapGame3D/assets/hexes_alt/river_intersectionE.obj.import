@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://crpl2ilk3hvwt"
+path="res://.godot/imported/river_intersectionE.obj-9aea1350019841ef2c6e204659d5a60f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/river_intersectionE.obj-9aea1350019841ef2c6e204659d5a60f.mesh"]
+
+source_file="res://assets/hexes_alt/river_intersectionE.obj"
+dest_files=["res://.godot/imported/river_intersectionE.obj-9aea1350019841ef2c6e204659d5a60f.mesh", "res://.godot/imported/river_intersectionE.obj-9aea1350019841ef2c6e204659d5a60f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

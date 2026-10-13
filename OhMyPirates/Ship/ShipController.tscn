@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Ship/sail_small_pirate.png" type="Texture" id=1]
+[ext_resource path="res://Ship/hull_small.png" type="Texture" id=2]
+[ext_resource path="res://Ship/pole.png" type="Texture" id=3]
+[ext_resource path="res://Ship/nest.png" type="Texture" id=4]
+[ext_resource path="res://Ship/sail_large_pirate.png" type="Texture" id=5]
+[ext_resource path="res://Ship/flag_pirate.png" type="Texture" id=6]
+[ext_resource path="res://Ship/ShipController.gd" type="Script" id=7]
+
+[node name="ShipController" type="KinematicBody2D"]
+collision_layer = 4
+collision_mask = 6
+script = ExtResource( 7 )
+
+[node name="Hull" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="Pole" type="Sprite" parent="."]
+position = Vector2( 0, 24 )
+texture = ExtResource( 3 )
+
+[node name="SailSmall" type="Sprite" parent="."]
+position = Vector2( 0, 24 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 4 )
+
+[node name="SailLarge" type="Sprite" parent="."]
+position = Vector2( 0, -32 )
+texture = ExtResource( 5 )
+offset = Vector2( 0, 20 )
+
+[node name="Nest" type="Sprite" parent="."]
+position = Vector2( 0, -36 )
+texture = ExtResource( 4 )
+
+[node name="Flag" type="Sprite" parent="."]
+position = Vector2( 0, -48 )
+texture = ExtResource( 6 )
+
+[node name="HullCollisionShape" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 0, 46, 10, 32, 14, 14, 14, -35, 9, -44, 0, -48, -9, -44, -14, -35, -14, 14, -10, 32 )

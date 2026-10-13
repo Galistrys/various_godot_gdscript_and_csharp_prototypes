@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bolu2270wwsty"
+path="res://.godot/imported/path_crossing.obj-e22c7b5a8a6bfbd917e6ed74491b60df.mesh"
+
+[deps]
+
+files=["res://.godot/imported/path_crossing.obj-e22c7b5a8a6bfbd917e6ed74491b60df.mesh"]
+
+source_file="res://assets/hexes_alt/path_crossing.obj"
+dest_files=["res://.godot/imported/path_crossing.obj-e22c7b5a8a6bfbd917e6ed74491b60df.mesh", "res://.godot/imported/path_crossing.obj-e22c7b5a8a6bfbd917e6ed74491b60df.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

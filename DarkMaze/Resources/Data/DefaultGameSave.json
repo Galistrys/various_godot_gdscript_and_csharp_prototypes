@@ -1,0 +1,18 @@
+{
+    "player_position": "Vector3( 0, 2, 0 )",
+    "player_rotation": "Vector3( 0, 0, 0 )",
+    "notes": [],
+    "items": [],
+    "diaries": [],
+    "quests" : {
+        "completed": [],
+        "in_progress": {
+            
+        }
+    },
+    "occurred_events": [],
+    "current_map_id": "TEST_MAP",
+    "maps_data": {
+        
+    }
+}

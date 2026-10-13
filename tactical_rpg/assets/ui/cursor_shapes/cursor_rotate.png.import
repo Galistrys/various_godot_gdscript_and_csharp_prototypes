@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://wa140ekkkkcj"
+path="res://.godot/imported/cursor_rotate.png-c37abf4ee9ff5168ae86aaf81edca82e.image"
+
+[deps]
+
+source_file="res://assets/ui/cursor_shapes/cursor_rotate.png"
+dest_files=["res://.godot/imported/cursor_rotate.png-c37abf4ee9ff5168ae86aaf81edca82e.image"]
+
+[params]
+

@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://cjksp6xdcwvt"]
+
+[ext_resource type="Script" uid="uid://byfoftieb1vk1" path="res://core/managers/game_manager.gd" id="1_a6n74"]
+[ext_resource type="PackedScene" uid="uid://dxl8n0sdnheun" path="res://ui/loading_screen/loading_screen.tscn" id="6_a6n74"]
+[ext_resource type="Script" uid="uid://bdpixacfh6mwb" path="res://world/world_manager.gd" id="8_fteye"]
+[ext_resource type="Script" uid="uid://dpe3ny7ba2ggi" path="res://world/level_manager.gd" id="9_cjwmv"]
+[ext_resource type="PackedScene" uid="uid://cyg68cvrohy1x" path="res://core/tools/player_camera/player_camera.tscn" id="10_yjvkv"]
+[ext_resource type="Script" uid="uid://djxsftkl54dm0" path="res://ui/gui_manager.gd" id="11_j6ps1"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_4e84a"]
+
+[node name="GameManager" type="Node" unique_id=1182556930]
+script = ExtResource("1_a6n74")
+
+[node name="WorldManager" type="Node3D" parent="." unique_id=538630400]
+script = ExtResource("8_fteye")
+metadata/_custom_type_script = "uid://bdpixacfh6mwb"
+
+[node name="LevelManager" type="Node3D" parent="WorldManager" unique_id=1285085086]
+script = ExtResource("9_cjwmv")
+metadata/_custom_type_script = "uid://dpe3ny7ba2ggi"
+
+[node name="PlayerCamera" parent="WorldManager" unique_id=161423192 instance=ExtResource("10_yjvkv")]
+
+[node name="TestEntity" type="Node3D" parent="WorldManager" unique_id=1224402379]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="WorldManager/TestEntity" unique_id=842202309]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_4e84a")
+
+[node name="GuiManager" type="Control" parent="." unique_id=1782689240]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("11_j6ps1")
+metadata/_custom_type_script = "uid://djxsftkl54dm0"
+
+[node name="LoadingScreen" parent="GuiManager" unique_id=1009649504 instance=ExtResource("6_a6n74")]

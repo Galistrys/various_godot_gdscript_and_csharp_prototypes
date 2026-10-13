@@ -1,0 +1,3 @@
+;en;pl
+TEST_NOTE;Test note;Testowa notatka
+TEST_NOTE_CONTENT;This is a test note's content.<<new_line>>Another line.;To jest testowa notatka.<<new_line>>Nowa linia.

@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://x40ctht71dw1"]
+
+[ext_resource type="Script" uid="uid://cua888btpedvc" path="res://gameplay/components/interior_viewport/interior_world_component.gd" id="1_ctfya"]
+[ext_resource type="Script" uid="uid://dpgriyrk6rcdd" path="res://gameplay/components/interior_viewport/interior_viewport.gd" id="2_s7ip8"]
+[ext_resource type="Script" uid="uid://dwl2vl31jx5xi" path="res://gameplay/components/interior_viewport/exterior_camera.gd" id="3_jejll"]
+
+[sub_resource type="World3D" id="World3D_61oou"]
+
+[sub_resource type="Environment" id="Environment_h4xda"]
+background_color = Color(0, 0, 0, 0)
+
+[node name="InteriorWorldComponent" type="Node3D" unique_id=1482195677]
+script = ExtResource("1_ctfya")
+
+[node name="InteriorViewport" type="SubViewport" parent="." unique_id=1349427899]
+own_world_3d = true
+world_3d = SubResource("World3D_61oou")
+transparent_bg = true
+handle_input_locally = false
+script = ExtResource("2_s7ip8")
+metadata/_custom_type_script = "uid://dpgriyrk6rcdd"
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="InteriorViewport" unique_id=1979742227]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="InteriorViewport" unique_id=1663458231]
+environment = SubResource("Environment_h4xda")
+
+[node name="ExteriorCamera" type="Camera3D" parent="." unique_id=654376339]
+script = ExtResource("3_jejll")

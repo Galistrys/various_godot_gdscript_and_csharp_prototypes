@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://60o8xns7aayg"
+
+[deps]
+
+files=["res://localization/mm_settings_view.en.translation", "res://localization/mm_settings_view.pl.translation"]
+
+source_file="res://localization/mm_settings_view.csv"
+dest_files=["res://localization/mm_settings_view.en.translation", "res://localization/mm_settings_view.pl.translation"]
+
+[params]
+
+compress=true
+delimiter=1

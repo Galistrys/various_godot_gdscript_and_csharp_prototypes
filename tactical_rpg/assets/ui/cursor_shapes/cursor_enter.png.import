@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://dxuoub6784ekm"
+path="res://.godot/imported/cursor_enter.png-f00f5c31183cb23dc93cb0d49a3dd70b.image"
+
+[deps]
+
+source_file="res://assets/ui/cursor_shapes/cursor_enter.png"
+dest_files=["res://.godot/imported/cursor_enter.png-f00f5c31183cb23dc93cb0d49a3dd70b.image"]
+
+[params]
+

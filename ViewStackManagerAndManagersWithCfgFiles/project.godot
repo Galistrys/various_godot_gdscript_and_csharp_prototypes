@@ -1,0 +1,52 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="ToyCarGame"
+run/main_scene="uid://dfpaa5opj5sh3"
+config/features=PackedStringArray("4.4", "Mobile")
+config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="uid://d211xt8t3lpic"
+
+[autoload]
+
+AppManager="*res://tools/autoloads/app_manager.gd"
+EventBus="*res://tools/autoloads/event_bus.gd"
+LocalizationManager="*res://tools/autoloads/localization_manager.gd"
+AudioManager="*res://tools/autoloads/audio_manager.gd"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[gui]
+
+theme/custom="uid://b7xd5cgxnkddu"
+theme/custom_font="uid://ds4k1xahj2uem"
+
+[importer_defaults]
+
+texture={
+&"mipmaps/generate": true
+}
+csv_translation={
+&"delimiter": 1
+}
+
+[rendering]
+
+renderer/rendering_method="mobile"

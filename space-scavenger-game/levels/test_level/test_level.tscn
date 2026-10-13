@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://dpv0imn10d1je"]
+
+[ext_resource type="Script" uid="uid://deew7py5n6ujc" path="res://levels/level.gd" id="1_isn0r"]
+[ext_resource type="Texture2D" uid="uid://c3624wo448qd3" path="res://assets/prototype_textures/dark/texture_09.png" id="2_qo0ko"]
+[ext_resource type="Texture2D" uid="uid://3ws3imu84dh7" path="res://assets/prototype_textures/green/texture_01.png" id="3_8th66"]
+[ext_resource type="Texture2D" uid="uid://dapowb1hdcrda" path="res://assets/prototype_textures/red/texture_01.png" id="4_xctyr"]
+[ext_resource type="Texture2D" uid="uid://dp2wq1vugxbfs" path="res://assets/prototype_textures/orange/texture_02.png" id="5_8th66"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jhowa"]
+size = Vector3(32, 1, 32)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bm4f2"]
+albedo_texture = ExtResource("2_qo0ko")
+uv1_scale = Vector3(96, 64, 32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jhowa"]
+material = SubResource("StandardMaterial3D_bm4f2")
+size = Vector3(32, 1, 32)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bm4f2"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pehjj"]
+albedo_texture = ExtResource("3_8th66")
+uv1_scale = Vector3(3, 2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2xkeo"]
+material = SubResource("StandardMaterial3D_pehjj")
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_21gvb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_18dot"]
+albedo_texture = ExtResource("4_xctyr")
+uv1_scale = Vector3(3, 2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_v1acv"]
+material = SubResource("StandardMaterial3D_18dot")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_jhowa"]
+points = PackedVector3Array(2, -1, 1, 2, -1, -1, -2, -1, 1, -2, -1, -1, -2, 1, 1, -2, 1, -1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xctyr"]
+albedo_texture = ExtResource("5_8th66")
+uv1_scale = Vector3(6, 2, 1)
+
+[sub_resource type="PrismMesh" id="PrismMesh_jhowa"]
+material = SubResource("StandardMaterial3D_xctyr")
+left_to_right = 0.0
+size = Vector3(4, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2xkeo"]
+size = Vector3(32, 8, 32)
+
+[node name="TestLevel" type="Node3D" unique_id=1788134885]
+script = ExtResource("1_isn0r")
+
+[node name="Terrain" type="Node3D" parent="." unique_id=1228641859]
+
+[node name="Floor" type="StaticBody3D" parent="Terrain" unique_id=255786951]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Floor" unique_id=2079429613]
+shape = SubResource("BoxShape3D_jhowa")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/Floor" unique_id=1072368810]
+mesh = SubResource("BoxMesh_jhowa")
+
+[node name="Floor2" type="StaticBody3D" parent="Terrain" unique_id=1269285656]
+transform = Transform3D(0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 0, 0, 1, -7.5920796, -0.5, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Floor2" unique_id=1631082359]
+shape = SubResource("BoxShape3D_jhowa")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/Floor2" unique_id=242321018]
+mesh = SubResource("BoxMesh_jhowa")
+
+[node name="Wall" type="StaticBody3D" parent="Terrain" unique_id=770386290]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1, -2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Wall" unique_id=954580919]
+shape = SubResource("BoxShape3D_bm4f2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/Wall" unique_id=371418528]
+mesh = SubResource("BoxMesh_2xkeo")
+
+[node name="Box" type="StaticBody3D" parent="Terrain" unique_id=179421898]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.5, -2.5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Box" unique_id=1365788338]
+shape = SubResource("BoxShape3D_21gvb")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/Box" unique_id=1655634894]
+mesh = SubResource("BoxMesh_v1acv")
+
+[node name="Box2" type="StaticBody3D" parent="Terrain" unique_id=1765772936]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 1.5, -2.5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Box2" unique_id=1040133190]
+shape = SubResource("BoxShape3D_21gvb")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/Box2" unique_id=339973947]
+mesh = SubResource("BoxMesh_v1acv")
+
+[node name="Ramp" type="StaticBody3D" parent="Terrain" unique_id=384550638]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3, 1, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Ramp" unique_id=1680451410]
+shape = SubResource("ConvexPolygonShape3D_jhowa")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Terrain/Ramp" unique_id=873672493]
+mesh = SubResource("PrismMesh_jhowa")
+
+[node name="GravityZone" type="Area3D" parent="." unique_id=760115558]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+collision_mask = 3
+gravity_space_override = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GravityZone" unique_id=491862003]
+shape = SubResource("BoxShape3D_2xkeo")

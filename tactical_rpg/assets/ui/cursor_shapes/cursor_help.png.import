@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://dr06c5g5qy374"
+path="res://.godot/imported/cursor_help.png-e765c6b97b376a933e2a5763b058d864.image"
+
+[deps]
+
+source_file="res://assets/ui/cursor_shapes/cursor_help.png"
+dest_files=["res://.godot/imported/cursor_help.png-e765c6b97b376a933e2a5763b058d864.image"]
+
+[params]
+

@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://dfxnvkxw0hc56"]
+
+[ext_resource type="Script" uid="uid://cmm3k1jfqc70c" path="res://core/game/game_manager.gd" id="1_dr7lg"]
+[ext_resource type="Script" uid="uid://dvtc3hqhbdfke" path="res://core/game/world_manager.gd" id="2_qdio8"]
+[ext_resource type="Script" uid="uid://n2qgpxq8t624" path="res://core/game/environment_manager.gd" id="3_1vfc6"]
+[ext_resource type="Environment" uid="uid://bcec5csvg80jp" path="res://core/default_environment.tres" id="4_61oou"]
+[ext_resource type="Script" uid="uid://cka3o6f4ffgre" path="res://core/game/level_manager.gd" id="5_odgy7"]
+[ext_resource type="Script" uid="uid://cxhe8ttybd0fd" path="res://core/game/entities_manager.gd" id="6_1vfc6"]
+[ext_resource type="PackedScene" uid="uid://bkc7y776pxoy5" path="res://gameplay/player/player.tscn" id="6_d4epb"]
+[ext_resource type="Script" uid="uid://t7i06tego482" path="res://core/game/ships_manager.gd" id="7_d4epb"]
+[ext_resource type="PackedScene" uid="uid://bt5y0kvj34ah" path="res://gameplay/entities/grabbable_object/grabbable_object.tscn" id="7_pbdeg"]
+[ext_resource type="PackedScene" uid="uid://t3xa15c82nc1" path="res://gameplay/ship/ships/test_ship/test_ship_controller.tscn" id="10_61oou"]
+
+[node name="GameManager" type="Node" unique_id=2146634029]
+script = ExtResource("1_dr7lg")
+
+[node name="WorldManager" type="Node3D" parent="." unique_id=1529664049]
+script = ExtResource("2_qdio8")
+metadata/_custom_type_script = "uid://dvtc3hqhbdfke"
+
+[node name="EnvironmentManager" type="Node3D" parent="WorldManager" unique_id=189238759]
+script = ExtResource("3_1vfc6")
+metadata/_custom_type_script = "uid://n2qgpxq8t624"
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="WorldManager/EnvironmentManager" unique_id=1834214717]
+environment = ExtResource("4_61oou")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldManager/EnvironmentManager" unique_id=897894053]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="LevelManager" type="Node3D" parent="WorldManager" unique_id=705791339]
+script = ExtResource("5_odgy7")
+metadata/_custom_type_script = "uid://cka3o6f4ffgre"
+
+[node name="EntitiesManager" type="Node3D" parent="WorldManager" unique_id=1818797518]
+script = ExtResource("6_1vfc6")
+_player_packed_scene = ExtResource("6_d4epb")
+_grabbable_packed_scene = ExtResource("7_pbdeg")
+metadata/_custom_type_script = "uid://cxhe8ttybd0fd"
+
+[node name="ShipsManager" type="Node3D" parent="WorldManager" unique_id=1846049961]
+script = ExtResource("7_d4epb")
+metadata/_custom_type_script = "uid://t7i06tego482"
+
+[node name="TestShipController" parent="WorldManager/ShipsManager" unique_id=1310536497 instance=ExtResource("10_61oou")]
+transform = Transform3D(0.40069982, -0.31372875, 0.8608217, 0.41831318, 0.8985481, 0.13275956, -0.8151402, 0.3068962, 0.49128497, 32, 0, 0)
+
+[node name="Control" type="Control" parent="." unique_id=1270691363]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 7

@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://d03b1bt81tere"
+path="res://.godot/imported/chunk_compute.glsl-b2fe3ab6f6613acaf30b5ba3ccf58814.res"
+
+[deps]
+
+source_file="res://voxel_terrain/compute_test/chunk_compute.glsl"
+dest_files=["res://.godot/imported/chunk_compute.glsl-b2fe3ab6f6613acaf30b5ba3ccf58814.res"]
+
+[params]
+

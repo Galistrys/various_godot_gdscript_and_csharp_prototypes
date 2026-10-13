@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://c3ys6spwk7y4d"
+path="res://.godot/imported/cursor_cross.png-6df63a197d971b0ac9899159f68cd1c1.image"
+
+[deps]
+
+source_file="res://assets/ui/cursor_shapes/cursor_cross.png"
+dest_files=["res://.godot/imported/cursor_cross.png-6df63a197d971b0ac9899159f68cd1c1.image"]
+
+[params]
+

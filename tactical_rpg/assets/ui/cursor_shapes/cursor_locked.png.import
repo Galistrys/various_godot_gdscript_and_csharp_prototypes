@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://bxkgukjtipujw"
+path="res://.godot/imported/cursor_locked.png-c4eb24dbd861f42cefd020ab1e772b92.image"
+
+[deps]
+
+source_file="res://assets/ui/cursor_shapes/cursor_locked.png"
+dest_files=["res://.godot/imported/cursor_locked.png-c4eb24dbd861f42cefd020ab1e772b92.image"]
+
+[params]
+

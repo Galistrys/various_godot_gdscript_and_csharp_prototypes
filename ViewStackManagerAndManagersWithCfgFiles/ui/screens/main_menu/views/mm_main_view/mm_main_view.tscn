@@ -1,0 +1,100 @@
+[gd_scene load_steps=4 format=3 uid="uid://drkki73ygqck8"]
+
+[ext_resource type="Script" uid="uid://dhlwg4sryntd7" path="res://ui/screens/main_menu/views/mm_main_view/mm_main_view.gd" id="1_d28fo"]
+[ext_resource type="Texture2D" uid="uid://ddyfvucfixic0" path="res://icon.svg" id="2_ypeq6"]
+
+[sub_resource type="Theme" id="Theme_ypeq6"]
+default_font_size = 24
+
+[node name="MmMainView" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d28fo")
+metadata/_custom_type_script = "uid://5eswsqlhy3l5"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 256
+alignment = 1
+
+[node name="SelectionTextureRect" type="TextureRect" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(256, 256)
+layout_mode = 2
+texture = ExtResource("2_ypeq6")
+stretch_mode = 3
+
+[node name="Buttons" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="SpGameButton" type="Button" parent="VBoxContainer/HBoxContainer/Buttons"]
+layout_mode = 2
+theme_type_variation = &"MainMenuButton"
+text = "MM_MV_SP_GAME"
+alignment = 2
+
+[node name="MpGameButton" type="Button" parent="VBoxContainer/HBoxContainer/Buttons"]
+layout_mode = 2
+theme_type_variation = &"MainMenuButton"
+text = "MM_MV_MP_GAME"
+alignment = 2
+
+[node name="RecordsButton" type="Button" parent="VBoxContainer/HBoxContainer/Buttons"]
+layout_mode = 2
+theme_type_variation = &"MainMenuButton"
+text = "MM_MV_RECORDS"
+alignment = 2
+
+[node name="SettingsButton" type="Button" parent="VBoxContainer/HBoxContainer/Buttons"]
+layout_mode = 2
+theme_type_variation = &"MainMenuButton"
+text = "MM_MV_SETTINGS"
+alignment = 2
+
+[node name="AboutButton" type="Button" parent="VBoxContainer/HBoxContainer/Buttons"]
+layout_mode = 2
+theme_type_variation = &"MainMenuButton"
+text = "MM_MV_ABOUT"
+alignment = 2
+
+[node name="ExitButton" type="Button" parent="VBoxContainer/HBoxContainer/Buttons"]
+layout_mode = 2
+theme_type_variation = &"MainMenuButton"
+text = "MM_MV_EXIT"
+alignment = 2
+
+[node name="ConfirmationDialog" type="ConfirmationDialog" parent="."]
+transparent_bg = true
+title = "MM_MV_EXIT_CONF_TITLE"
+initial_position = 2
+size = Vector2i(300, 122)
+transparent = true
+min_size = Vector2i(300, 70)
+theme = SubResource("Theme_ypeq6")
+ok_button_text = "MM_MV_YES"
+dialog_text = "MM_MV_EXIT_CONF_MSG"
+dialog_autowrap = true
+cancel_button_text = "MM_MV_NO"
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Buttons/SpGameButton" to="." method="_on_sp_game_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Buttons/MpGameButton" to="." method="_on_mp_game_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Buttons/RecordsButton" to="." method="_on_records_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Buttons/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Buttons/AboutButton" to="." method="_on_about_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Buttons/ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="confirmed" from="ConfirmationDialog" to="." method="_on_confirmation_dialog_confirmed"]

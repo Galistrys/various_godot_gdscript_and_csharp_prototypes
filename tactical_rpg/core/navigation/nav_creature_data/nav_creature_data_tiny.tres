@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="NavCreatureData" format=3 uid="uid://buqbv36hprd88"]
+
+[ext_resource type="Script" uid="uid://cr0y1n1bqdqas" path="res://core/navigation/nav_creature_data/nav_creature_data.gd" id="1_dp1dj"]
+
+[resource]
+script = ExtResource("1_dp1dj")
+creature_radius = 0.25
+creature_height = 0.75

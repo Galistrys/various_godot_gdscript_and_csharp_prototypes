@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://bigu7e1xggk7q"
+path="res://.godot/imported/cursor_drag.png-57f0f5231d62d85afec671e08044faf6.image"
+
+[deps]
+
+source_file="res://assets/ui/cursor_shapes/cursor_drag.png"
+dest_files=["res://.godot/imported/cursor_drag.png-57f0f5231d62d85afec671e08044faf6.image"]
+
+[params]
+

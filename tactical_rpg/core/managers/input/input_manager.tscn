@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b11054qdw0obv"]
+
+[ext_resource type="Script" uid="uid://bktbfk1if7bda" path="res://core/managers/input/input_manager.gd" id="1_7as01"]
+[ext_resource type="Script" uid="uid://dp6vaup4vefdi" path="res://core/managers/input/mk_input_provider.gd" id="2_erjwq"]
+[ext_resource type="Script" uid="uid://dj7u23n423ixp" path="res://core/managers/input/gamepad_input_provider.gd" id="3_alu6k"]
+
+[node name="InputManager" type="Node" unique_id=85266112]
+script = ExtResource("1_7as01")
+
+[node name="MkInputProvider" type="Node" parent="." unique_id=1201041519]
+script = ExtResource("2_erjwq")
+
+[node name="GamepadInputProvider" type="Node" parent="." unique_id=1102244302]
+script = ExtResource("3_alu6k")

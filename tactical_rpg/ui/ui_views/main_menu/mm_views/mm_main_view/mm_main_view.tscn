@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://bx2xsnif3gw01"]
+
+[ext_resource type="Script" uid="uid://co1nhagrmg4pt" path="res://ui/ui_views/main_menu/mm_views/mm_main_view/mm_main_view.gd" id="1_rps0q"]
+[ext_resource type="Texture2D" uid="uid://cxqx4trvnoopp" path="res://icon.svg" id="2_mqb5d"]
+
+[node name="MmMainView" type="Control" unique_id=1597478763]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rps0q")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1563206789]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LogoContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=2059221908]
+layout_mode = 2
+alignment = 1
+
+[node name="LogoTextureRect" type="TextureRect" parent="VBoxContainer/LogoContainer" unique_id=2090714751]
+layout_mode = 2
+texture = ExtResource("2_mqb5d")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1002131457]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ButtonsContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer" unique_id=1692043672]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="ContinueGameButton" type="Button" parent="VBoxContainer/HBoxContainer/ButtonsContainer" unique_id=1551885798]
+visible = false
+layout_mode = 2
+text = "MM_CONTINUE_BTN"
+
+[node name="NewGameButton" type="Button" parent="VBoxContainer/HBoxContainer/ButtonsContainer" unique_id=1028567553]
+layout_mode = 2
+text = "MM_NEW_BTN"
+
+[node name="LoadGameButton" type="Button" parent="VBoxContainer/HBoxContainer/ButtonsContainer" unique_id=1138385712]
+layout_mode = 2
+text = "MM_LOAD_BTN"
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/HBoxContainer/ButtonsContainer" unique_id=614361838]
+layout_mode = 2
+
+[node name="SettingsButton" type="Button" parent="VBoxContainer/HBoxContainer/ButtonsContainer" unique_id=1840651266]
+layout_mode = 2
+text = "MM_SETTINGS_BTN"
+
+[node name="CreatorsButton" type="Button" parent="VBoxContainer/HBoxContainer/ButtonsContainer" unique_id=1400516704]
+layout_mode = 2
+text = "MM_CREATORS_BTN"
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/HBoxContainer/ButtonsContainer" unique_id=70150776]
+layout_mode = 2
+
+[node name="ExitButton" type="Button" parent="VBoxContainer/HBoxContainer/ButtonsContainer" unique_id=502537878]
+layout_mode = 2
+text = "MM_EXIT_BTN"
+
+[node name="EmptySpace" type="Control" parent="VBoxContainer/HBoxContainer" unique_id=1843235027]
+layout_mode = 2
+size_flags_horizontal = 3

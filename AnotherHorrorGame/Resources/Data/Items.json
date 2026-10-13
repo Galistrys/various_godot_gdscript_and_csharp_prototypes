@@ -1,0 +1,23 @@
+{
+    "TestComponent1": {
+        "name": "ITEM_TEST_COMPONENT_1",
+        "description": "ITEM_TEST_COMPONENT_1_DESC",
+        "is_instanceable": true,
+        "combine": {
+            "TestComponent2": "TestItem"
+        }
+    },
+    "TestComponent2": {
+        "name": "ITEM_TEST_COMPONENT_2",
+        "description": "ITEM_TEST_COMPONENT_2_DESC",
+        "is_instanceable": true,
+        "combine": {
+            "TestComponent1": "TestItem"
+        }
+    },
+    "TestItem": {
+        "name": "ITEM_TEST_ITEM",
+        "description": "ITEM_TEST_ITEM_DESC",
+        "is_instanceable": true
+    }
+}

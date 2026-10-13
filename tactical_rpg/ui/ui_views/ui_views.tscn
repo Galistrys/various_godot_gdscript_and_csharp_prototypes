@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://b0sw4t4i6i28q"]
+
+[ext_resource type="Script" uid="uid://c0htr732m7v2x" path="res://ui/view_managers/view_state_manager.gd" id="1_65lbm"]
+[ext_resource type="Script" uid="uid://defk6qtcpylr6" path="res://ui/ui_views/ui_views.gd" id="1_h6fwg"]
+[ext_resource type="PackedScene" uid="uid://1qtgwqlemjr2" path="res://ui/ui_views/main_menu/main_menu_view.tscn" id="2_h6fwg"]
+
+[node name="UiViews" type="Control" unique_id=1902164585]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h6fwg")
+
+[node name="MainViewStateManager" type="Node" parent="." unique_id=1926159857 node_paths=PackedStringArray("_views_container")]
+script = ExtResource("1_65lbm")
+_id = "MainViews"
+_start_view_name = "MainMenuView"
+_views_container = NodePath("../MainViews")
+
+[node name="MainViews" type="Control" parent="." unique_id=2111146846]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainMenuView" parent="MainViews" unique_id=1122569997 instance=ExtResource("2_h6fwg")]
+layout_mode = 1

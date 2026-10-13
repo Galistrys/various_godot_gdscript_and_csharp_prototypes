@@ -1,0 +1,6 @@
+;en;pl
+TEST_AUTHOR;Test Author;Testowy Autor
+TEST_TEXT_TITLE;Test text entry;Testowy wpis tekstowy
+TEST_TEXT_CONTENT;Test text entry's content.<<new_line>>Text after new line.;Zawartoś testowego tekstowego wpisu.<<new_line>>Tekst po nowej linii.
+TEST_AUDIO_TITLE;Test audio entry;Testowy wpis audio
+TEST_VIDEO_TITLE;Test video entry;Testowy wpis video

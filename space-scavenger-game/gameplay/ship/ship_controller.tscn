@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://t5e7addt3pdj"]
+
+[ext_resource type="Script" uid="uid://dnu16rwlmo4jg" path="res://gameplay/ship/ship_controller.gd" id="1_jbcw1"]
+[ext_resource type="PackedScene" uid="uid://x40ctht71dw1" path="res://gameplay/components/interior_viewport/interior_world_component.tscn" id="2_263ne"]
+
+[node name="ShipController" type="AnimatableBody3D" unique_id=1310536497]
+script = ExtResource("1_jbcw1")
+
+[node name="InteriorWorldComponent" parent="." unique_id=1482195677 instance=ExtResource("2_263ne")]

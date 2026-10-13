@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://66ud3c66ircd"
+path="res://.godot/imported/cursor_spell_action.png-ee5040fa294ffb15273b3d6447b4a496.image"
+
+[deps]
+
+source_file="res://assets/ui/cursor_shapes/cursor_spell_action.png"
+dest_files=["res://.godot/imported/cursor_spell_action.png-ee5040fa294ffb15273b3d6447b4a496.image"]
+
+[params]
+

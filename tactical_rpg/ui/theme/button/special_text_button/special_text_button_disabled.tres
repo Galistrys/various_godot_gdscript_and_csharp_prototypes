@@ -1,0 +1,11 @@
+[gd_resource type="StyleBoxTexture" format=3 uid="uid://cpcwgdblok5h4"]
+
+[ext_resource type="Texture2D" uid="uid://by71m80edruyd" path="res://assets/ui/textures/special_text_button_normal.png" id="1_am8hv"]
+
+[resource]
+texture = ExtResource("1_am8hv")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
+modulate_color = Color(0.5370987, 0.5370987, 0.5370987, 1)

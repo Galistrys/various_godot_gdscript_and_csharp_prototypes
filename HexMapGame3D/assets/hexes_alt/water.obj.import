@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dusj0q3qqmskr"
+path="res://.godot/imported/water.obj-3b0da778a256087ff4ace068cd7f5bec.mesh"
+
+[deps]
+
+files=["res://.godot/imported/water.obj-3b0da778a256087ff4ace068cd7f5bec.mesh"]
+
+source_file="res://assets/hexes_alt/water.obj"
+dest_files=["res://.godot/imported/water.obj-3b0da778a256087ff4ace068cd7f5bec.mesh", "res://.godot/imported/water.obj-3b0da778a256087ff4ace068cd7f5bec.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

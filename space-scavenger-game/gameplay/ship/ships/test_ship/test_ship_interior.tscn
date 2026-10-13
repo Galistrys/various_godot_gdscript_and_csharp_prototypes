@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bi3ai26riaksq"]
+
+[ext_resource type="ArrayMesh" uid="uid://cilut0y3se8dl" path="res://gameplay/ship/ships/test_ship/test_ship_model.tres" id="1_istc2"]
+[ext_resource type="Shape3D" uid="uid://cmrc77u3ui5pp" path="res://gameplay/ship/ships/test_ship/test_ship_shape.tres" id="2_vbn0r"]
+
+[node name="TestShipInterior" type="StaticBody3D" unique_id=512332705]
+
+[node name="TestShipModel" type="MeshInstance3D" parent="." unique_id=1760926740]
+mesh = ExtResource("1_istc2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1684717930]
+shape = ExtResource("2_vbn0r")

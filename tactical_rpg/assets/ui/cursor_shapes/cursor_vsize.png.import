@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://c2bmftycc4q3t"
+path="res://.godot/imported/cursor_vsize.png-b9a618c2b7b4145792b81a39f26fe50a.image"
+
+[deps]
+
+source_file="res://assets/ui/cursor_shapes/cursor_vsize.png"
+dest_files=["res://.godot/imported/cursor_vsize.png-b9a618c2b7b4145792b81a39f26fe50a.image"]
+
+[params]
+

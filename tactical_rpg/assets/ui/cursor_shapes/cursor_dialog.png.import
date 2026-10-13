@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://nf2qvxgyo5xb"
+path="res://.godot/imported/cursor_dialog.png-53b7d45e25b7b7b7c21b220418cf34ea.image"
+
+[deps]
+
+source_file="res://assets/ui/cursor_shapes/cursor_dialog.png"
+dest_files=["res://.godot/imported/cursor_dialog.png-53b7d45e25b7b7b7c21b220418cf34ea.image"]
+
+[params]
+

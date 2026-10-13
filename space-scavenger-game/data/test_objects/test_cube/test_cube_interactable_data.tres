@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InteractableData" format=3 uid="uid://3hukben0gnvm"]
+
+[ext_resource type="Script" uid="uid://dskdoqmllccg2" path="res://gameplay/components/interaction/interactable_data.gd" id="1_ivkaf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_slqs3"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[resource]
+script = ExtResource("1_ivkaf")
+shape = SubResource("BoxShape3D_slqs3")
+metadata/_custom_type_script = "uid://dskdoqmllccg2"

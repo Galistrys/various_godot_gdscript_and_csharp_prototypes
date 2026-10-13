@@ -1,0 +1,49 @@
+keys;en;pl
+MAIN_MENU_NEW_GAME_BUTTON;New Game;Nowa Gra
+MAIN_MENU_LOAD_GAME_BUTTON;Load Game;Wczytaj Grę
+MAIN_MENU_SETTINGS_BUTTON;Settings;Ustawienia
+MAIN_MENU_ABOUT_BUTTON;About;O grze
+MAIN_MENU_EXIT_BUTTON;Exit;Wyjście
+NEW_GAME_LABEL;NEW GAME;NOWA GRA
+NEW_GAME_PLACEHOLDER;Profile's name;Nazwa profilu
+NEW_GAME_CREATE;Create;Stwórz
+NEW_GAME_CANCEL;Cancel;Anuluj
+LOAD_GAME_LABEL;LOAD GAME; WCZYTAJ GRĘ
+LOAD_GAME_LOAD;Load;Wczytaj
+LOAD_GAME_RETURN;Return;Powrót
+PAUSE_MENU_RESUME_BUTTON;Resume;Wznów
+PAUSE_MENU_SAVE_BUTTON;Save;Zapisz
+PAUSE_MENU_LOAD_BUTTON;Load;Wczytaj
+PAUSE_MENU_SETTINGS_BUTTON;Settings;Ustawienia
+PAUSE_MENU_EXIT_BUTTON;Exit;Wyjdź
+EXIT_DIALOG_TITLE;Please Confirm...;Potwierdź, proszę...
+EXIT_DIALOG_TEXT;Are you sure you want to exit the game?;Czy na pewno chcesz wyjść z gry?
+EXIT_DIALOG_TEXT_2;Are you sure you want to exit the game? Unsaved progress will be lost!;Czy na pewno chcesz wyjść z gry? Nie zapisany postęp zostanie utracony!
+EXIT_DIALOG_CONFIRM;Yes;Tak
+EXIT_DIALOG_CANCEL;No;Nie
+BASIC_ENTITY;Basic Entity;Podstawowy Byt
+ITEM_ENTITY;Item Entity;Byt Przedmiotu
+MOVABLE_ENTITY;Movable Entity;Byt Ruchomy
+BASIC_DOOR;Basic Door;Podstawowe Drzwi
+ITEM_TEST_ITEM;Test Item;Testowy Przedmiot
+ITEM_DESC_TEST_ITEM;It's a Test Item. Only for the tests.;To jest Testowy Przedmiot. Tylko do testów.
+ITEM_TEST_INGR;Test Ingredient;Testowy Składnik
+ITEM_DESC_TEST_INGR;It's a Test Ingredient. Only for the tests.;To jest Testowy Składnik. Tylko do testów.
+ITEM_TEST_RESULT;Test Result;Testowy Wynik
+ITEM_DESC_TEST_RESULT;It's a Test Result. Only for the tests.;To jest Testowy Wynik. Tylko do testów.
+JOURNAL_MENU_NOTES_BUTTON;NOTES;NOTATKI
+JOURNAL_MENU_DIARY_BUTTON;DIARY;PAMIĘTNIK
+JOURNAL_MENU_TODO_BUTTON;TO DO;DO ZROBIENIA
+JOURNAL_MENU_EXIT_BUTTON;EXIT;WYJDŹ
+NOTE_TEST_NOTE;Test Note;Testowa Notatka
+NOTE_CONTENT_TEST_NOTE;To open the door, combine Test Item and Test Ingredient together and then use the product on the door.;Aby otworzyć drzwi, połącz Testowy Przedmiot oraz Testowy Składnik ze sobą, a następnie użyj uzyskanego przedmiotu na drzwiach.
+DIARY_22_05_2020_TEST_ENTRY;[05/22/2020] Test Entry number 1;[22.05.2020] Testowy wpis numer 1
+DIARY_22_05_2020_CONTENT_TEST_ENTRY;Test Entry number 1 written on 05/22/2020;Testowy wpis numer 1 napisany 22.05.2020
+DIARY_23_05_2020_TEST_ENTRY;[05/23/2020] Test Entry number 2;[23.05.2020] Testowy wpis numer 2
+DIARY_23_05_2020_CONTENT_TEST_ENTRY;Test Entry number 2 written on 05/23/2020;Testowy wpis numer 2 napisany 23.05.2020
+TODO_TITLE_LABEL_TEXT;To Do;Do zrobienia
+QUEST_TEST_DOOR_OPEN;Open the closed door.;Otwórz zamknięte drzwi.
+SUBQUEST_TEST_DOOR_INITIAL;Find a way to open the door.;Znajdź sposób na otwarcie drzwi.
+SUBQUEST_TEST_DOOR_OPEN_COLLECT_INGREDIENTS;Collect items needed to create item, that will unlock the door.;Zbierz przedmioty potrzebne do stworznia przedmiotu otwierającego drzwi.
+SUBQUEST_TEST_DOOR_OPEN_CREATE_KEY;Create the key.;Stwórz klucz.
+SUBQUEST_TEST_DOOR_OPEN_OPEN_DOOR;Open the door.;Otwórz drzwi.

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cpe601k8hvb7"]
+
+[ext_resource type="Script" uid="uid://d2q107dwwd6ts" path="res://core/navigation/navigation_manager.gd" id="1_qag2s"]
+
+[node name="NavigationManager" type="Node" unique_id=1986232078]
+script = ExtResource("1_qag2s")

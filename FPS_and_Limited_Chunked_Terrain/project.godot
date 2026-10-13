@@ -1,0 +1,151 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+_global_script_classes=[{
+"base": "RefCounted",
+"class": &"ChunkMeshData",
+"language": &"GDScript",
+"path": "res://world/terrain/chunk_mesh_data.gd"
+}, {
+"base": "Object",
+"class": &"ChunkMeshGenerator",
+"language": &"GDScript",
+"path": "res://world/terrain/chunk_mesh_generator.gd"
+}, {
+"base": "Object",
+"class": &"ChunkShapeGenerator",
+"language": &"GDScript",
+"path": "res://world/terrain/chunk_shape_generator.gd"
+}, {
+"base": "CharacterBody3D",
+"class": &"FlyCamera",
+"language": &"GDScript",
+"path": "res://tools/fly_camera/fly_camera.gd"
+}, {
+"base": "Node3D",
+"class": &"GameWorld",
+"language": &"GDScript",
+"path": "res://world/game_world.gd"
+}, {
+"base": "PlayerState",
+"class": &"IdlePlayerState",
+"language": &"GDScript",
+"path": "res://entities/player/player_states/idle_player_state.gd"
+}, {
+"base": "CharacterBody3D",
+"class": &"PlayerController",
+"language": &"GDScript",
+"path": "res://entities/player/player_controller.gd"
+}, {
+"base": "RefCounted",
+"class": &"PlayerState",
+"language": &"GDScript",
+"path": "res://entities/player/player_states/player_state.gd"
+}, {
+"base": "RefCounted",
+"class": &"PlayerStateMachine",
+"language": &"GDScript",
+"path": "res://entities/player/player_states/player_state_machine.gd"
+}, {
+"base": "Node3D",
+"class": &"Terrain",
+"language": &"GDScript",
+"path": "res://world/terrain/terrain.gd"
+}, {
+"base": "RefCounted",
+"class": &"TerrainChunk",
+"language": &"GDScript",
+"path": "res://world/terrain/terrain_chunk.gd"
+}]
+_global_script_class_icons={
+"ChunkMeshData": "",
+"ChunkMeshGenerator": "",
+"ChunkShapeGenerator": "",
+"FlyCamera": "",
+"GameWorld": "",
+"IdlePlayerState": "",
+"PlayerController": "",
+"PlayerState": "",
+"PlayerStateMachine": "",
+"Terrain": "",
+"TerrainChunk": ""
+}
+
+[application]
+
+config/name="ColdSurvival"
+run/main_scene="res://scenes/game.scn"
+config/features=PackedStringArray("4.0", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Constants="*res://tools/autoloads/constants.gd"
+
+[debug]
+
+gdscript/warnings/integer_division=0
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
+[input]
+
+move_forward={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":87,"unicode":0,"echo":false,"script":null)
+]
+}
+move_backward={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":83,"unicode":0,"echo":false,"script":null)
+]
+}
+move_left={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":65,"unicode":0,"echo":false,"script":null)
+]
+}
+move_right={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"unicode":0,"echo":false,"script":null)
+]
+}
+move_up={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":32,"unicode":0,"echo":false,"script":null)
+]
+}
+move_down={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194326,"unicode":0,"echo":false,"script":null)
+]
+}
+sprint={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194325,"unicode":0,"echo":false,"script":null)
+]
+}
+jump={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":32,"unicode":0,"echo":false,"script":null)
+]
+}
+crouch={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194326,"unicode":0,"echo":false,"script":null)
+]
+}
+
+[physics]
+
+3d/run_on_separate_thread=true

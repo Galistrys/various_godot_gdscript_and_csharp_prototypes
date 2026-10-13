@@ -1,0 +1,72 @@
+[gd_scene load_steps=8 format=3 uid="uid://dfpaa5opj5sh3"]
+
+[ext_resource type="Script" uid="uid://clgc08bmx07me" path="res://ui/view_stack/view_stack_manager.gd" id="1_ris88"]
+[ext_resource type="Shader" uid="uid://60sdfw5yswsl" path="res://ui/screens/main_menu/scrolling_background.gdshader" id="1_y0y1s"]
+[ext_resource type="Texture2D" uid="uid://bibr062aiogo2" path="res://ui/screens/main_menu/pattern.png" id="2_7vfoy"]
+[ext_resource type="PackedScene" uid="uid://drkki73ygqck8" path="res://ui/screens/main_menu/views/mm_main_view/mm_main_view.tscn" id="3_7vfoy"]
+
+[sub_resource type="Gradient" id="Gradient_2bqi2"]
+colors = PackedColorArray(1, 0.6, 0, 1, 0.811765, 0.388235, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_lprr3"]
+gradient = SubResource("Gradient_2bqi2")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_t08lf"]
+shader = ExtResource("1_y0y1s")
+shader_parameter/direction = Vector2(0.5, 0.5)
+shader_parameter/speed = 0.5
+shader_parameter/scale = 1.0
+shader_parameter/gradient = SubResource("GradientTexture1D_lprr3")
+shader_parameter/mix_amount = 1.0
+
+[node name="MainMenuScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackgroundTextureRect" type="TextureRect" parent="Background"]
+texture_filter = 1
+material = SubResource("ShaderMaterial_t08lf")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_7vfoy")
+stretch_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="ViewsContainer" type="Control" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="MmMainView" parent="MarginContainer/ViewsContainer" instance=ExtResource("3_7vfoy")]
+layout_mode = 1
+
+[node name="ViewStackManager" type="Node" parent="." node_paths=PackedStringArray("_views_container")]
+script = ExtResource("1_ris88")
+_start_view_name = "MmMainView"
+_views_container = NodePath("../MarginContainer/ViewsContainer")
+metadata/_custom_type_script = "uid://clgc08bmx07me"

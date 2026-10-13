@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bt5y0kvj34ah"]
+
+[ext_resource type="Script" uid="uid://d0jiunv0avg7a" path="res://gameplay/entities/grabbable_object/grabbable_object.gd" id="1_xdw1h"]
+[ext_resource type="Script" uid="uid://c2pu30i0v2vn3" path="res://gameplay/components/interaction/interactable_component.gd" id="2_slqs3"]
+
+[node name="GrabbableObject" type="RigidBody3D" unique_id=23647927]
+collision_layer = 2
+collision_mask = 19
+script = ExtResource("1_xdw1h")
+
+[node name="Model" type="MeshInstance3D" parent="." unique_id=1190084833]
+
+[node name="ColShape" type="CollisionShape3D" parent="." unique_id=1178116614]
+
+[node name="InteractableComponent" type="Area3D" parent="." unique_id=2026844403 node_paths=PackedStringArray("_interaction_object", "_interaction_col_shape")]
+script = ExtResource("2_slqs3")
+_interaction_object = NodePath("..")
+_interaction_col_shape = NodePath("InteractionColShape")
+metadata/_custom_type_script = "uid://c2pu30i0v2vn3"
+
+[node name="InteractionColShape" type="CollisionShape3D" parent="InteractableComponent" unique_id=1275872201]

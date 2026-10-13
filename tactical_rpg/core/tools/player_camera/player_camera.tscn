@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cyg68cvrohy1x"]
+
+[ext_resource type="Script" uid="uid://bgm6p5tlka54p" path="res://core/tools/player_camera/player_camera.gd" id="1_hayqi"]
+
+[node name="PlayerCamera" type="Node3D" unique_id=161423192]
+script = ExtResource("1_hayqi")
+
+[node name="CameraHandle" type="Node3D" parent="." unique_id=591639706]
+
+[node name="Camera3D" type="Camera3D" parent="CameraHandle" unique_id=64473785]
